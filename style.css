@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    /* background-image: url(https://img.freepik.com/vetores-gratis/fundo-hexagonal-escuro-com-cor-gradiente_79603-1409.jpg?w=740&t=st=1675798158~exp=1675798758~hmac=57653a38b95e1c8f435ec3a7c82b77be963fe6ba9a7bbd1e5c47207c20ad2ac2); */
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-futurista-geometrico-abstrato_23-2148903831.jpg?w=740&t=st=1675799444~exp=1675800044~hmac=1b7a621ffc884f4b960d0a04b5f9c9f59e8a3f92a5204654fc3c36728d735a84);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fdfafa91;
+}
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+}
+.container{
+    position: relative;/*comportamento em linha (horizontal)*/
+    width: 320px;
+    margin: 100px auto 0px auto;
+    perspective: 900px;
+}
+.carrosel{
+    position: absolute;/*abolute - comportamento por blocos (um embaixo do outro)*/
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 20s infinite forwards linear;
+}
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0,);
+    display: flex;
+    border: 3px solid #fff;
+    border-radius: 15px;
+}
+.imagem span{
+    margin: auto;
+    font-size: 1em;
+}
+footer{
+    color: #fff;
+    margin-top: 580px;
+    text-align: center;
+}
+a{
+    background-color: #000000;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 5px; 
+}
+a:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
+@keyframes rotate360{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg)
+    }
+}
+@keyframes animate2{
+    to{
+        background-position: 200%;
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://www.stockvault.net/data/2016/02/26/185143/preview16.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+.imagem:nth-child(2){
+    background-image: url(https://www.stockvault.net/data/2017/05/19/236197/preview16.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3){
+    background-image: url(https://www.stockvault.net/data/2010/03/12/113221/preview16.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagem:nth-child(4){
+    background-image: url(https://www.stockvault.net/data/2016/03/21/189399/preview16.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagem:nth-child(5){
+    background-image: url(https://www.stockvault.net/data/2017/05/27/236795/preview16.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagem:nth-child(6){
+    background-image: url(https://www.stockvault.net/data/2016/08/19/207887/preview16.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://www.stockvault.net/data/2017/02/21/223805/preview16.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(8){
+    background-image: url(https://www.stockvault.net/data/2011/02/21/117786/preview16.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(9){
+    background-image: url(https://www.stockvault.net/data/2019/12/20/271983/preview16.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
